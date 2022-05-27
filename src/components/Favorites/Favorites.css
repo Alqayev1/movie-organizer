@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 1px solid rgba(0, 8, 7);
     padding: 30px 20px;
+    width: 450px;
 }
 
 .favorites__name {
@@ -11,11 +12,14 @@
     padding: 5px 10px;
     border: 1px solid rgba(0, 8, 7, .5);
     margin-bottom: 24px;
+    outline: none;
+    border-radius: 8px;
 }
 
 .favorites__list {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
+
 
 .enterLink{
     font-size: 20px;
@@ -43,4 +47,8 @@
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
+}
+.x-btn{
+    width: 25px;
+    height: 25px;
 }

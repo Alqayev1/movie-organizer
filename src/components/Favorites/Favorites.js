@@ -61,6 +61,7 @@ class Favorites extends Component {
                 {item.Title} ({item.Year})
                 <button
                 ref={this.deleteButton}
+                className="x-btn"
                   onClick={() =>
                     store.dispatch({
                       type: "DELETE_FAVORITE",

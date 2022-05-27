@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <header className="header">
                 <h1 className="header__title">
-                    MustSee
+                    SuluTapa Films
                 </h1>
             </header>
         );
