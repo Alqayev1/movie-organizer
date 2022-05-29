@@ -12,7 +12,7 @@ export const reducer = (state = initialState, action) => {
     case SUBMIT:
       allMovie = [...state.allMovie, action.payload];
       return { ...state, allMovie };
-
+      
       case DELETE_MOVIE:
         allMovie = [];
         return { ...state, allMovie };
