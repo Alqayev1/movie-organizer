@@ -19,7 +19,7 @@ class Favorites extends Component {
 
   handleChange = (e) => {
     this.setState({ title: e.target.value });
-    // console.log(this.state.title);
+    console.log(this.state.title);
   };
 
   postList = () => {
@@ -46,11 +46,12 @@ class Favorites extends Component {
   }
 
   render() {
+    const {title} = this.state;
     return (
       <div className="favorites">
         <input
           onChange={this.handleChange}
-          value={this.title}
+          value={title}
           className="favorites__name"
         />
         <ul className="favorites__list">

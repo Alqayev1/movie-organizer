@@ -7,9 +7,15 @@ class MovieItem extends Component {
   // handleClick = () => {
   //   console.log(this.props.Title);
   // };
-
+  state = {
+    text : "Добавить в список",
+  }
+  clickBtn = () =>{
+    this.setState({text : "Added"});
+  }
   render() {
     const { Title, Year, Poster, imdbID } = this.props;
+    const {text} = this.state;
     // console.log(this.props.Title);
 
     return (

@@ -1,4 +1,3 @@
-@media screen and (min-width:820px){
 .list-page {
     padding: 3.652173913043478vw calc(50% - 26.08695652173913vw);
     display: flex;
@@ -9,7 +8,6 @@
 .list-page__title {
     font-size: 2.9565217391304346vw;
     margin-bottom: 9.217391304347826vw;
-
 }
 .list-page ul{
     border: 0.08695652173913043vw solid gray;
@@ -24,5 +22,4 @@
 .list-page ul li a{
     text-decoration: none;
     color: #000;
-}
 }
