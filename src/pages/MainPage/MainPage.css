@@ -20,7 +20,7 @@
 
 @media (min-width: 320px) and (max-width: 819px) {
   .main-page__content {
-    padding: 20px calc(50% - 500px);
+    padding: 40px calc(50% - 500px);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -39,6 +39,6 @@
 
   .main-page__favorites {
     margin-left: 0;
-    width: 60%;
+    width: 70%;
   }
 }

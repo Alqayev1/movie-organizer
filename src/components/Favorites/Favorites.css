@@ -58,7 +58,10 @@
   .favorites {
     box-sizing: border-box;
     border: 0.2vw solid rgba(0, 8, 7);
-    padding: 6vw 4vw;
+    padding: 8vw 6vw;
+    width: 85vw;
+    position: relative;
+    right: 7vw;
 }
 
 .favorites__name {

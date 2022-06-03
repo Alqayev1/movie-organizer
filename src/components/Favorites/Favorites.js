@@ -25,7 +25,7 @@ class Favorites extends Component {
   postList = () => {
     this.enterLink.current.style.display = "block";
     this.closeLink.current.style.display = "none";
-    this.deleteButton.current.style.display = "none";
+    // this.deleteButton.current.style.display = "none";
     fetch(`https://acb-api.algoritmika.org/api/movies/list/`, {
       method: 'POST',
       headers: {
