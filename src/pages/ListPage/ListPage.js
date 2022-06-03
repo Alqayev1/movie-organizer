@@ -4,7 +4,7 @@ import './ListPage.css';
 class ListPage extends Component {
     state = {
         movies: [],
-        title: "",
+        title: "saaa",
     }
     componentDidMount() {
         const id = this.props.match.params.id;
@@ -12,13 +12,14 @@ class ListPage extends Component {
         fetch(`https://acb-api.algoritmika.org/api/movies/list/${id}`)  
             .then(res => res.json())
             .then(data => {
+                this.setState({ title: data.title });
                 this.setState({movies:data.movies})
             })
     }
     render() {
         return (
             <div className="list-page">
-                <h1 className="list-page__title">{this.title}</h1>
+                <h1 className="list-page__title">{this.state.title}</h1>
                 <ul>
                     {this.state.movies.map((item) => {
                         return (
