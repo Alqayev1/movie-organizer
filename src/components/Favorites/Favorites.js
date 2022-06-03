@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./Favorites.css";
 import store from "../../redux/store";
+// import { changeButtonName } from "../../redux/action";
 
 class Favorites extends Component {
   constructor(props) {
@@ -63,12 +64,13 @@ class Favorites extends Component {
                 <button
                 ref={this.deleteButton}
                 className="deleteButton"
-                  onClick={() =>
-                    store.dispatch({
+                  onClick={() =>{
+                     store.dispatch({
                       type: "DELETE_FAVORITE",
                       payload: index,
-                    })
-                  }
+                    });
+                    this.props.changeButtonName(0)
+                  }}
                 >
                   x
                 </button>
@@ -88,4 +90,12 @@ class Favorites extends Component {
 const mapStateToProps = (state) => {
   return { favMovie: state.favMovie };
 };
+
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     changeButtonName: (buttonTextId) =>{
+//       // dispatch(changeButtonName(buttonTextId))
+//     }
+//   }
+// }
 export default connect(mapStateToProps)(Favorites);

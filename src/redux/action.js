@@ -1,4 +1,4 @@
-import {SUBMIT , DELETE_FAVORITE , DELETE_MOVIE , ADD_FAVORITE } from './actiontypes'
+import {SUBMIT , DELETE_FAVORITE , DELETE_MOVIE , ADD_FAVORITE, CHANGE_BUTTON_NAME } from './actiontypes'
 import axios from 'axios'
 export function searchMovies(movies) {
     return {
@@ -27,7 +27,7 @@ export function addFavoriteList(id) {
   return {
     type: ADD_FAVORITE,
     payload: {
-    imdbID:imdbID,
+    imdbID:id,
     },
   };
 }
@@ -39,7 +39,14 @@ export function removeMovieFromFavoriteList(id) {
       },
     };
   }
-
+  // export function changeButtonName(buttonTextId) {
+  //   return {
+  //     type: CHANGE_BUTTON_NAME,
+  //     payload: {
+  //       buttonTextId: buttonTextId,
+  //     },
+  //   };
+  // }
   export function deleteMovie(id){
       return{
           type : DELETE_MOVIE,
